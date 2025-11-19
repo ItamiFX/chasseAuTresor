@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="evenements.js"></script>
+    <title>Chasse au tresor</title>
+</head>
+
+<body>
+    <header>
+        <h1>CHASSE AU TRESOR</h1>
+    </header>
+    <main>
+        <section id="tab">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Groupe</th>
+                        <th>Dernière modif</th>
+                        <th>Banni</th>
+                        <th>Pixels modifiés</th>
+                    </tr>
+                </thead>
+                <tbody id="listeJoueurs"></tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Groupe</th>
+                        <th>Nb Pieces</th>
+                        <th>Total Trésor</th>
+                    </tr>
+                </thead>
+                <tbody id="listeGroupes"></tbody>
+            </table>
+        </section>
+        <section id="plateau">
+            <button id="recharger">Recharger</button>
+            <div id="grille"></div>
+            <p id="tempsA"></p>
+        </section>
+        <section id="form">
+            <form action="" method="post">
+                <div id="Id">
+                    <h3>IDENTIFICATION</h3>
+                    <label for="uid"> Entrez votre uid</label>
+                    <input type="password" id="uid" placeholder="Obligatoire"> 
+                    <button id="verif">Verification</button>
+                </div>
+                <div id="Actions">
+                    <h3>ACTIONS DE JEU</h3>
+                    <label for="ligne"> Ligne</label>
+                    <input type="text" id="ligne">
+                    <label for="colonne"> Colonne</label>
+                    <input type="text" id="colonne">
+                    <button id="chercher">Chercher pièce</button>
+                    <button id="prendre">Prendre pièce</button>
+                    <button id="voler">Voler pièce</button>
+                    <button id="espion">Payer espion</button>
+                </div>
+                <div id="qrcodes">
+                    <h3>QR CODES</h3>
+                    <input type="text" id="magicnumbers" placeholder="Magic numbers !">
+                    <button id="valider">Valider</button>
+                </div>
+                <div id="console"></div>
+            </form>
+    </section>
+    </main>
+</body>
+
+</html>
